@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [My Hub spot App Test automation regression suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="hub spot functional test(failed)">
+    <classes>
+      <class name="TestNGSessions.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestNGSessions.HomePageTest -->
+    </classes>
+  </test> <!-- hub spot functional test(failed) -->
+</suite> <!-- Failed suite [My Hub spot App Test automation regression suite] -->

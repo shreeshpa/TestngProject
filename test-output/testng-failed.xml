@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [My Hub spot App Test automation sanity suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://app.hubspot.com/login"/>
+  <test thread-count="5" name="hub spot functional test(failed)" verbose="3">
+    <parameter name="password" value="test@123"/>
+    <parameter name="username" value="test@gmail.com"/>
+    <classes>
+      <class name="TestNGSessions.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="verifySignUpLinkTest"/>
+          <include name="verifyLoginPageTitleTest"/>
+        </methods>
+      </class> <!-- TestNGSessions.LoginPageTest -->
+    </classes>
+  </test> <!-- hub spot functional test(failed) -->
+</suite> <!-- Failed suite [My Hub spot App Test automation sanity suite] -->

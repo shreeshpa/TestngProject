@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="My Hub spot App Test automation sanity suite" verbose="3">
+
+<parameter name="url" value="https://app.hubspot.com/login" />
+<parameter name="browser" value="chrome" />
+
+
+  <test thread-count="5" name="hub spot functional test">
+  
+  <parameter name="username" value="test@gmail.com" />
+  <parameter name="password" value="test@123" />
+  
+    <classes>
+     <class name="TestNGSessions.LoginPageTest"/>  
+    </classes>
+  </test> 
+</suite> 
